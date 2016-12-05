@@ -25,6 +25,9 @@ def _read(fn):
     path = os.path.join(os.path.dirname(__file__), fn)
     return open(path).read()
 
+def _read(fn):
+    path = os.path.join(os.path.dirname(__file__), fn)
+    return open(path).read()
 
 # Build manpages if we're making a source distribution tarball.
 if 'sdist' in sys.argv:
